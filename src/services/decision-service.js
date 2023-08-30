@@ -15,7 +15,7 @@ class DecisionService {
             const query = { 
                 preAssessmentValue, 
                 lastYearProfit,
-                companyName: body.companyName,
+                businessName: body.businessName,
                 yearEstablished: body.yearEstablished
             }
             const finalDecision = true;
