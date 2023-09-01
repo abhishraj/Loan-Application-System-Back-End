@@ -5,6 +5,7 @@ import { accountingRouters } from "./src/routes/accounting-routes.js";
 import { decisionRouters } from "./src/routes/decision-routes.js";
 
 const app = express();
+app.use(express.json());
 app.use('/master', masterRouters);
 app.use('/account', accountingRouters);
 app.use('/decision', decisionRouters);
